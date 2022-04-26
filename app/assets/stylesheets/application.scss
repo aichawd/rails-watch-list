@@ -10,3 +10,52 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Your other app stylesheets
+@import url("lists.scss");
+
+
+.banner {
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.indexlists {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1536440136628-849c177e76a1');
+  background-size: 100vw auto;
+}
+
+.list-card {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://picsum.photos/seed/picsum/200');
+
+  .list-name {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+  }
+}
