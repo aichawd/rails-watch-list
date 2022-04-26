@@ -2,6 +2,7 @@
   <h1> <%= @list.name %> </h1>
 
   <p> <%= link_to 'Add Bookmark', new_list_bookmark_path(@list)  %> </p>
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 
   <ul>
     <% @bookmarks.each do |bookmark| %>
